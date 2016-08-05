@@ -8,12 +8,14 @@ for (var i = 0; i < arr.length; i++) {
 var reg = prompt ("Введите Имя пользователя");
 
 
-if (reg === arr[i]) { 
+if (reg == arr [i]) { 
     alert (reg + ", Вы успешно вошли! ");
-    break;
+  
 }
 
 else {
     alert("Ошибка, введите Имя еще раз")
+    
 }
+break;
 }
