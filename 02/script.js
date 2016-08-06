@@ -1,21 +1,26 @@
 
 
-var arr = ['Антон', 'Филипп', 'Светлана', 'Петр', 'Ольга'];
+var arr = [];
 
-for (var i = 0; i < arr.length; i++) {
+for (var i = 0; i < 5; i++) {
 
+	arr[i] = prompt ("Введите имя");
+}
+
+console.log(arr);
 
 var reg = prompt ("Введите Имя пользователя");
 
 
-if (reg == arr [i]) { 
+for (var i = 0; i < 5; i++) {
+if (reg == arr [i]) {
     alert (reg + ", Вы успешно вошли! ");
-  
+  break;
+}
 }
 
-else {
+if ( i>=5 ) {
     alert("Ошибка, введите Имя еще раз")
     
 }
-break;
-}
+
